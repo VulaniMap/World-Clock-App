@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World clock</title>
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.6.0/moment-timezone-with-data-1970-2030.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -17,26 +19,27 @@
           <option value="Africa/Pretoria">Pretoria 🇿🇦</option>
         </select>
       </form>
-      <div class="city">
+      <div class="city" id="Tokyo">
         <div class="city1">
           <h2>Tokyo 🗼</h2>
-          <div class="date">09 June 2026</div>
+          <div class="date"></div>
         </div>
-        <div class="time">11:40:12 <small>AM</small></div>
+        <div class="time"></div>
       </div>
-      <div class="city">
+      <div class="city" id="Pretoria">
         <div>
           <h2>Pretoria</h2>
-          <div class="date">10 June 2026</div>
+          <div class="date"></div>
         </div>
-        <div class="time">13:40:12 <small>PM</small></div>
+        <div class="time"></div>
       </div>
 
       <script src="src/index.js"></script>
     </div>
     <footer>
       This project was coded by
-      <a href="https://github.com/VulaniMap" target="_blank">Vulani Mapiyeye</a
+      <a href="https://github.com/VulaniMap" target="_blank"
+        ><strong>Vulani Mapiyeye</strong></a
       >, is open sourced on
       <a href="https://github.com/VulaniMap/World-Clock-App" target="_blank"
         >GitHub</a
