@@ -10,32 +10,32 @@
   </head>
   <body>
     <div class="container">
-      <h1>World Clock App</h1>
-      <form>
-        <select id="city">
-          <option value="">Select a city</option>
-          <option value="Asia/Tokyo">Tokyo 🇯🇵</option>
-          <option value="Australia/Sydney">Sydney 🇦🇺</option>
-          <option value="Africa/Johannesburg">Pretoria 🇿🇦</option>
-        </select>
-      </form>
+      <h1>World Clock</h1>
+
+      <select id="city">
+        <option value="">Select a city</option>
+        <option value="current">Current location</option>
+        <option value="Africa/Johannesburg">Pretoria 🇿🇦</option>
+        <option value="Asia/Tokyo">Tokyo 🇯🇵</option>
+        <option value="Australia/Sydney">Sydney 🇦🇺</option>
+      </select>
+
       <div id="cities">
         <div class="city" id="Tokyo">
           <div class="city1">
-            <h2></h2>
+            <h2>Tokyo</h2>
             <div class="date"></div>
           </div>
           <div class="time"></div>
         </div>
         <div class="city" id="Pretoria">
           <div>
-            <h2></h2>
+            <h2>Pretoria</h2>
             <div class="date"></div>
           </div>
           <div class="time"></div>
         </div>
       </div>
-      <script src="src/index.js"></script>
     </div>
     <footer>
       This project was coded by
@@ -50,5 +50,6 @@
         >Render</a
       >.
     </footer>
+    <script src="src/index.js"></script>
   </body>
 </html>
