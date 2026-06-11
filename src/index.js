@@ -22,6 +22,17 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]",
     );
   }
+  let SydneyElement = document.querySelector("#Sydney");
+  if (SydneyElement) {
+    let SydneyDateElement = SydneyElement.querySelector(".date");
+    let SydneyTimeElement = SydneyElement.querySelector(".time");
+    let SydneyTime = moment().tz("Australia/Sydney");
+
+    SydneyDateElement.innerHTML = SydneyTime.format("Do MMMM YYYY");
+    SydneyTimeElement.innerHTML = SydneyTime.format(
+      "h:mm:ss [<small>]A[</small>]",
+    );
+  }
 }
 
 function updateCity(event) {
@@ -48,4 +59,3 @@ setInterval(updateTime, 1000);
 
 let citiesSelectElement = document.querySelector("#city");
 citiesSelectElement.addEventListener("change", updateCity);
-let selectedTimeZone = null;
